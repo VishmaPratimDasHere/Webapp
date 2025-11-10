@@ -106,7 +106,7 @@ MIT License — free to use, copy, and modify.
 
 ```
 <Your Name>
-<your email> | <LinkedIn> | <GitHub>
+vishmapdas@gmail.com | [<LinkedIn>](https://github.com/VishmaPratimDasHere/)
 ```
 
 ---
