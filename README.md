@@ -105,7 +105,7 @@ MIT License — free to use, copy, and modify.
 ## 📬 Contact
 
 ```
-<Your Name>
+Vishma Pratim Das
 vishmapdas@gmail.com | [<LinkedIn>](https://github.com/VishmaPratimDasHere/)
 ```
 
