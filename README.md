@@ -1,44 +1,114 @@
-Personal Portfolio Web App
+# 🌐 Personal Portfolio Web App
 
-An Express.js + EJS based portfolio website deployed on Railway.
+A minimal, responsive portfolio website built using **Express.js**, **EJS**, and **Bootstrap 5**, and deployed on **Railway**.
 
-Features:
-- Responsive UI (Bootstrap 5)
-- Dynamic EJS templating
-- Routes: /, /resume
-- Static assets served from /public
+---
 
-Tech Stack:
-Backend: Node.js + Express.js
-Frontend: HTML, CSS, Bootstrap, EJS
-Deployment: Railway
+## 🚀 Features
 
-Project Structure:
+- ✅ Responsive UI using Bootstrap 5
+- ✅ Server-side templating using EJS
+- ✅ Multiple routes (`/`, `/resume`)
+- ✅ Static assets served from `/public`
+- ✅ Deployment ready (Railway / Render / Vercel backend mode)
+
+---
+
+## 🛠 Tech Stack
+
+| Layer        | Technology |
+|--------------|------------|
+| Backend      | Node.js + Express.js |
+| Frontend     | HTML, CSS, Bootstrap 5, EJS |
+| Deployment   | Railway |
+
+---
+
+## 📂 Folder Structure
+
+```
 project-root/
-- views/
-  - partials/
-  - home.ejs
-  - resume.ejs
-- public/
-- app.js
-- package.json
-- README
+│
+├── views/                # EJS templates
+│   ├── partials/         # Reusable components like navbar
+│   ├── home.ejs
+│   └── resume.ejs
+│
+├── public/               # Static files (CSS, images, JS)
+│
+├── app.js                # Express server
+├── package.json          # Dependencies + start script
+└── README.md
+```
 
-Run locally:
+---
+
+## 🧪 Run Locally
+
+### 1. Clone the repo
+
+```sh
 git clone https://github.com/<your-username>/<repo-name>.git
 cd <repo-name>
+```
+
+### 2. Install dependencies
+
+```sh
+npm install
+```
+
+### 3. Start the server
+
+```sh
+npm start
+```
+
+Then visit:  
+👉 http://localhost:3000
+
+---
+
+## 🌍 Deployment (Railway)
+
+Railway automatically runs:
+
+```
 npm install
 npm start
-http://localhost:3000
+```
 
-Deployment (Railway):
-Ensure package.json contains:
-"scripts": { "start": "node app.js" }
-In app.js:
-app.listen(process.env.PORT || 3000)
+Ensure:
 
-License:
-MIT License
+**package.json**
 
-Contact:
+```json
+"scripts": {
+  "start": "node app.js"
+}
+```
+
+**app.js**
+
+```js
+app.listen(process.env.PORT || 3000);
+```
+
+---
+
+## 📄 License
+
+MIT License — free to use, copy, and modify.
+
+---
+
+## 📬 Contact
+
+```
+<Your Name>
 <your email> | <LinkedIn> | <GitHub>
+```
+
+---
+
+> ⭐ If you like this project, consider starring the repository on GitHub!
