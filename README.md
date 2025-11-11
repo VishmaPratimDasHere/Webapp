@@ -33,6 +33,8 @@ project-root/
 │   ├── partials/         # Reusable components like navbar
 │   ├── home.ejs
 │   └── resume.ejs
+|   └── contact.ejs
+|   └── 404.ejs
 │
 ├── public/               # Static files (CSS, images, JS)
 │
