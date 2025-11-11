@@ -19,7 +19,7 @@ A minimal, responsive portfolio website built using **Express.js**, **EJS**, and
 | Layer        | Technology |
 |--------------|------------|
 | Backend      | Node.js + Express.js |
-| Frontend     | HTML, CSS, Bootstrap 5, EJS |
+| Frontend     | HTML, CSS, Tailwind CSS, EJS |
 | Deployment   | Railway |
 
 ---
