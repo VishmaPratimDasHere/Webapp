@@ -1,12 +1,12 @@
 # 🌐 Personal Portfolio Web App
 
-A minimal, responsive portfolio website built using **Express.js**, **EJS**, and **Bootstrap 5**, and deployed on **Railway**.
+A minimal, responsive portfolio website built using **Express.js**, **EJS**, and **Tailwind CSS**, and deployed on **Railway**.
 
 ---
 
 ## 🚀 Features
 
-- ✅ Responsive UI using Bootstrap 5
+- ✅ Responsive UI using Tailwind CSS
 - ✅ Server-side templating using EJS
 - ✅ Multiple routes (`/`, `/resume`)
 - ✅ Static assets served from `/public`
