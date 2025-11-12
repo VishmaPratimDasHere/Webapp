@@ -19,6 +19,14 @@ app.get(
     }
 )
 
+app.get('/contact', (req, res) => {
+    res.render("contact")
+})
+
+app.use((req,res) => {
+    res.status(404).render("404")
+})
+
 app.listen(process.env.PORT || 3000, () =>{
     console.log("listening on port 3000")
 })
