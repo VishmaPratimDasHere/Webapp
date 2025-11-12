@@ -1,34 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Profile — Vishma Pratim Das</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="bg-light">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile — Vishma Pratim Das</title>
+  <link rel="stylesheet" href="css/output-styles.css" />
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <!-- Navbar (your partial includes animated navbar) -->
   <%- include("partials/navbar") %>
 
-  <div class="container mt-5">
-    <div class="card shadow p-4 text-center">
-      <img src="/images/profile.png" class="rounded-circle mx-auto mb-100" width="150">
+    <!-- PAGE CONTENT -->
+    <main class="pt-20"> <!-- leave space for fixed navbar -->
+      <!-- HERO -->
+      <section class="bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <!-- Left: text -->
+            <div class="space-y-6">
+              <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight
+                      transform transition-all duration-500 translate-y-0 opacity-100">
+                Hi — I’m <span class="text-blue-600">Vishma Pratim Das</span>
+              </h1>
+              <p class="text-lg text-slate-700 max-w-xl">
+                I build delightful web apps, scalable backend systems and machine learning prototypes.
+                I’m currently focused on full-stack product work, with an emphasis on user-centered design
+                and reproducible ML.
+              </p>
 
-      <h2 class="fw-bold">Vishma Pratim Das</h2>
-      <h5 class="text-muted">Full-stack Developer • Web, Android & ML</h5>
+              <div class="flex flex-wrap gap-3">
+                <a href="/projects" class="inline-block px-4 py-2 rounded-md bg-blue-600 text-white font-medium
+                                        shadow-sm hover:bg-blue-700 transition transform hover:-translate-y-0.5">
+                  View projects
+                </a>
+                <a href="/resume" class="inline-block px-4 py-2 rounded-md border border-blue-600 text-blue-600
+                                    hover:bg-blue-50 transition focus:outline-none focus:ring-2 focus:ring-blue-200">
+                  Resume
+                </a>
+                <a href="/contact" class="inline-block px-4 py-2 rounded-md text-sm text-gray-600
+                                      hover:underline">Get in touch</a>
+              </div>
+            </div>
+          </div> <!-- /container -->
+      </section>
 
-      <p class="mt-3">
-        Developer focused on Android development, web design, and machine learning.
-      </p>
+      <!-- ABOUT -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+          <div>
+            <h2 class="text-2xl font-semibold">About</h2>
+            <p class="mt-3 text-gray-700">
+              I build simple, reliable products that solve real user problems. My toolkit includes JavaScript (React,
+              Node),
+              Python (Flask/FastAPI, PyTorch), and devops tools for reproducible deployments.
+            </p>
+          </div>
 
-      <a href="/resume" class="btn btn-primary mt-3">View Resume</a>
-      <a href="/assets/Resume_IIITD.pdf" download class="btn btn-outline-secondary mt-3">Download PDF</a>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  
-  <footer class="cd2827bb bt b--black-10 mt4">
-    
-  </footer>
+          <div class="lg:col-span-2 space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="p-4 rounded-md bg-white shadow-sm">
+                <h3 class="text-sm font-medium text-gray-900">Systems</h3>
+                <p class="mt-2 text-sm text-gray-600">APIs, background processing, event-driven architectures, Redis,
+                  PostgreSQL.</p>
+              </div>
+
+              <div class="p-4 rounded-md bg-white shadow-sm">
+                <h3 class="text-sm font-medium text-gray-900">ML</h3>
+                <p class="mt-2 text-sm text-gray-600">Prototyping with PyTorch, model evaluation, reproducible training
+                  pipelines.</p>
+              </div>
+
+              <div class="p-4 rounded-md bg-white shadow-sm">
+                <h3 class="text-sm font-medium text-gray-900">Frontend</h3>
+                <p class="mt-2 text-sm text-gray-600">Component-driven UI, accessibility-first, Tailwind CSS, animation
+                  micro-interactions.</p>
+              </div>
+
+              <div class="p-4 rounded-md bg-white shadow-sm">
+                <h3 class="text-sm font-medium text-gray-900">Data</h3>
+                <p class="mt-2 text-sm text-gray-600">ETL pipelines, SQL, lightweight model-serving strategies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="bg-white/50 border-t border-b py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 class="text-lg font-semibold mb-4">Skills</h3>
+          <div class="flex flex-wrap gap-2">
+            <!-- skill badges -->
+            <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm">JavaScript</span>
+            <span class="px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-sm">React</span>
+            <span class="px-3 py-1 rounded-full bg-slate-50 text-slate-700 text-sm">Node.js</span>
+            <span class="px-3 py-1 rounded-full bg-green-50 text-green-700 text-sm">Python</span>
+            <span class="px-3 py-1 rounded-full bg-yellow-50 text-yellow-800 text-sm">PyTorch</span>
+            <span class="px-3 py-1 rounded-full bg-pink-50 text-pink-700 text-sm">SQL</span>
+            <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm">Docker</span>
+            <span class="px-3 py-1 rounded-full bg-gray-50 text-gray-700 text-sm">Tailwind</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED PROJECTS — populated from resume -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="projects">
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="text-2xl font-semibold">Featured projects</h3>
+          <a href="/projects" class="text-sm text-blue-600 hover:underline">See all</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Portfolio Website -->
+          <article
+            class="group bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h4 class="text-lg font-semibold">Portfolio Website</h4>
+                <div class="text-xs text-gray-500 mt-1">Oct, 2025 – Present · Team Size: 1 · Guide: Self-guided</div>
+                <p class="mt-3 text-sm text-gray-600">
+                  Built a portfolio website using the MERN stack and deployed on Railway & Vercel. Production and source
+                  links below.
+                </p>
+                <div class="mt-4 flex gap-3">
+                  <a href="https://webapp-production-d145.up.railway.app/" target="_blank" rel="noopener noreferrer"
+                    class="text-sm font-medium text-blue-600 hover:underline">View (Prod)</a>
+                  <a href="https://github.com/VishmaPratimDasHere/Webapp" target="_blank" rel="noopener noreferrer"
+                    class="text-sm text-gray-500 hover:underline">Code (GitHub)</a>
+                </div>
+              </div>
+
+              <div
+                class="hidden sm:block w-24 h-16 bg-gradient-to-tr from-blue-200 to-indigo-300 rounded-md flex items-center justify-center text-sm font-medium text-white">
+                Live
+              </div>
+            </div>
+          </article>
+
+          <!-- Discord AI chatbot -->
+          <article
+            class="group bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h4 class="text-lg font-semibold">Discord AI chatbot</h4>
+                <div class="text-xs text-gray-500 mt-1">Apr, 2025 – May, 2025 · Team Size: 1 · Guide: Self-guided</div>
+                <p class="mt-3 text-sm text-gray-600">
+                  Developed a Discord bot using discord.py that returns AI-driven replies and contextually shares
+                  professional details (resume/email) depending on conversation intent.
+                </p>
+                <div class="mt-4 flex gap-3">
+                  <a href="https://discord.gg/VyuGGRMuXp" target="_blank" rel="noopener noreferrer"
+                    class="text-sm font-medium text-blue-600 hover:underline">Invite (Discord)</a>
+                  <a href="https://github.com/VishmaPratimDasHere/Webapp" target="_blank" rel="noopener noreferrer"
+                    class="text-sm text-gray-500 hover:underline">Code (GitHub)</a>
+                </div>
+              </div>
+
+              <div
+                class="hidden sm:block w-24 h-16 bg-gradient-to-tr from-indigo-200 to-blue-300 rounded-md flex items-center justify-center text-sm font-medium text-white">
+                Bot
+              </div>
+            </div>
+          </article>
+
+          <!-- News Application -->
+          <article
+            class="group bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h4 class="text-lg font-semibold">News Application</h4>
+                <div class="text-xs text-gray-500 mt-1">Apr, 2025 – May, 2025 · Team Size: 2 · Guide: Dr. Arani
+                  Bhattacharya</div>
+                <p class="mt-3 text-sm text-gray-600">
+                  Real-time news app built in Kotlin using MVVM, Jetpack libraries, Retrofit and Coroutines. Includes
+                  search and bookmarking using the News API.
+                </p>
+                <div class="mt-4 flex gap-3">
+                  <a href="https://github.com/VishmaPratimDasHere/News_App" target="_blank" rel="noopener noreferrer"
+                    class="text-sm font-medium text-blue-600 hover:underline">Code (GitHub)</a>
+                </div>
+              </div>
+
+              <div
+                class="hidden sm:block w-24 h-16 bg-gradient-to-tr from-yellow-200 to-amber-300 rounded-md flex items-center justify-center text-sm font-medium text-white">
+                App
+              </div>
+            </div>
+          </article>
+
+          <!-- Flight Data Aggregator -->
+          <article
+            class="group bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h4 class="text-lg font-semibold">Flight Data Aggregator</h4>
+                <div class="text-xs text-gray-500 mt-1">Apr, 2025 – May, 2025 · Team Size: 1 · Guide: Dr. Arani
+                  Bhattacharya</div>
+                <p class="mt-3 text-sm text-gray-600">
+                  Real-time flight tracking app in Kotlin + Jetpack Compose, Room, Retrofit and Coroutines integrating
+                  AviationStack API; supports background updates and local caching.
+                </p>
+                <div class="mt-4 flex gap-3">
+                  <a href="https://github.com/VishmaPratimDasHere/Flight_Data_Aggregator" target="_blank"
+                    rel="noopener noreferrer" class="text-sm font-medium text-blue-600 hover:underline">Code
+                    (GitHub)</a>
+                </div>
+              </div>
+
+              <div
+                class="hidden sm:block w-24 h-16 bg-gradient-to-tr from-cyan-200 to-sky-300 rounded-md flex items-center justify-center text-sm font-medium text-white">
+                API
+              </div>
+            </div>
+          </article>
+
+          <!-- Travel App -->
+          <article
+            class="group bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h4 class="text-lg font-semibold">Travel App</h4>
+                <div class="text-xs text-gray-500 mt-1">Feb, 2025 – Mar, 2025 · Team Size: 1 · Guide: Dr. Arani
+                  Bhattacharya</div>
+                <p class="mt-3 text-sm text-gray-600">
+                  Travel planning app built in Kotlin + Jetpack Compose displaying routes, distances, journey progress,
+                  unit conversions and dynamic city info.
+                </p>
+                <div class="mt-4 flex gap-3">
+                  <a href="https://github.com/VishmaPratimDasHere/Travel_App" target="_blank" rel="noopener noreferrer"
+                    class="text-sm font-medium text-blue-600 hover:underline">Code (GitHub)</a>
+                </div>
+              </div>
+
+              <div
+                class="hidden sm:block w-24 h-16 bg-gradient-to-tr from-emerald-200 to-lime-300 rounded-md flex items-center justify-center text-sm font-medium text-white">
+                Mobile
+              </div>
+            </div>
+          </article>
+
+          <!-- Object Tracking Project -->
+          <article
+            class="group bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h4 class="text-lg font-semibold">Object Tracking Project (Python)</h4>
+                <div class="text-xs text-gray-500 mt-1">Nov, 2024 – Jan, 2025 · Team Size: 5 · Guide: Dr. Vinayak Abrol
+                </div>
+                <p class="mt-3 text-sm text-gray-600">
+                  Real-time object tracking using OpenCV and template-matching for efficient visual tracking across
+                  video frames.
+                </p>
+                <div class="mt-4 flex gap-3">
+                  <a href="https://github.com/VishmaPratimDasHere/ML_Object_Tracking/tree/main" target="_blank"
+                    rel="noopener noreferrer" class="text-sm font-medium text-blue-600 hover:underline">Code
+                    (GitHub)</a>
+                </div>
+              </div>
+
+              <div
+                class="hidden sm:block w-24 h-16 bg-gradient-to-tr from-rose-200 to-pink-300 rounded-md flex items-center justify-center text-sm font-medium text-white">
+                CV
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+
+      <!-- CONTACT CTA -->
+      <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-12">
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 class="text-2xl font-semibold">Interested in working together?</h3>
+            <p class="mt-2 text-sm text-white/90">I’m available for freelance and full-time opportunities. Let’s talk
+              about your next project.</p>
+          </div>
+
+          <div class="flex gap-3">
+            <a href="/contact"
+              class="px-4 py-2 bg-white text-blue-700 rounded-md font-medium shadow-sm hover:opacity-95 transition">
+              Contact me
+            </a>
+            <a href="/resume"
+              class="px-4 py-2 border border-white/30 rounded-md text-white hover:bg-white/10 transition">
+              Resume
+            </a>
+          </div>
+        </div>
+      </section>
+      <%- include("partials/footer") %>
+    </main>
+
+    <!-- Footer (your flat footer partial) -->
+
+    <!-- Small page scripts for micro-interactions -->
+    <script>
+      // simple reveal on scroll using IntersectionObserver
+      (function () {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('opacity-100', 'translate-y-0');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('[data-reveal]').forEach(el => {
+          el.classList.add('opacity-0', 'translate-y-4');
+          // add tailwind-ready classes for transition
+          el.classList.add('transition', 'duration-700', 'ease-out');
+          observer.observe(el);
+        });
+      })();
+    </script>
 </body>
+
 </html>

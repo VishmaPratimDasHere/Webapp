@@ -4,8 +4,8 @@ const path=require('path')
 
 app.set('view engine','ejs')
 app.set('views', path.join(__dirname,"views"))
-app.use(express.static("public"));
-
+app.use(express.static("public")); 
+// use a middleware before everything else; make the 'public' folder publicly accessible
 
 app.get(
     '/', (req,res)=> {

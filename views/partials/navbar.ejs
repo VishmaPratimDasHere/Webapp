@@ -1,13 +1,49 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
-  <a class="navbar-brand fw-bold" href="/">Vishma Pratim Das</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="bg-white border-b border-gray-200 fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item"><a class="nav-link" href="/">Profile</a></li>
-      <li class="nav-item"><a class="nav-link" href="/resume">Resume</a></li>
-    </ul>
+      <!-- Left side (Logo) -->
+      <div class="flex-shrink-0 flex items-center">
+        <a href="/" class="text-xl font-bold text-blue-600 hover:text-blue-800 transition-transform duration-300 hover:scale-105">
+          Portfolio - Vishma
+        </a>
+      </div>
+
+      <!-- Right side (Desktop menu) -->
+      <div class="hidden md:flex space-x-6 items-center">
+        <a href="/" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 hover:-translate-y-0.5">Home</a>
+        <a href="/resume" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 hover:-translate-y-0.5">Resume</a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-button" class="md:hidden flex items-center focus:outline-none active:scale-90 transition-transform duration-200">
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile dropdown -->
+  <!-- ADD animation classes below -->
+  <div id="mobile-menu"
+       class="md:hidden hidden bg-white px-4 pb-4 space-y-2 border-b border-gray-200
+              transition-all duration-300 ease-out transform origin-top scale-y-0 opacity-0">
+    <a href="/" class="block text-gray-700 hover:text-blue-600 transition">Home</a>
+    <a href="/resume" class="block text-gray-700 hover:text-blue-600 transition">Resume</a>
+    <a href="/projects" class="block text-gray-700 hover:text-blue-600 transition">Projects</a>
+    <a href="/contact" class="block text-gray-700 hover:text-blue-600 transition">Contact</a>
   </div>
 </nav>
+
+<script>
+  const btn = document.getElementById("mobile-menu-button");
+  const menu = document.getElementById("mobile-menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    menu.classList.toggle("scale-y-100");
+    menu.classList.toggle("opacity-100");
+  });
+</script>

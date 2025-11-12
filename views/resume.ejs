@@ -1,49 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Resume — Vishma Pratim Das</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/output-styles.css" />
 </head>
-<body class="bg-light">
 
+<body class="bg-gray-50 text-gray-900 antialiased min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
   <%- include("partials/navbar") %>
 
-  <div class="container mt-5">
-    <div class="card shadow p-4">
+    <!-- PAGE CONTENT -->
+    <main class="flex-1 pt-24 pb-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <h2 class="fw-bold">Resume</h2>
-      <hr>
+        <!-- HEADER -->
+        <header>
+          <h1 class="text-4xl font-extrabold tracking-tight">Vishma Pratim Das</h1>
 
-      <!-- Education -->
-      <h4 class="mt-3">Education</h4>
-      <ul>
-        <li><b>IIIT Delhi — M.Tech (CB)</b> (2024–Present) — CGPA: 7.00</li>
-        <li><b>DUIET, Dibrugarh University — B.Tech (CSE)</b> (2019–2023) — CGPA: 7.12</li>
-      </ul>
+          <p class="mt-2 text-sm text-gray-700">
+            M.Tech student at IIIT Delhi • Computational Biology
+            | Interested in Web, App Dev, and ML prototyping
+          </p>
 
-      <!-- Skills -->
-      <h4 class="mt-3">Skills</h4>
-      <ul>
-        <li>Android Development, Machine Learning, Web Design</li>
-        <li>Kotlin, Java, Python, JavaScript, PHP</li>
-        <li>PyTorch, scikit-learn, Retrofit, Jetpack Compose, Firebase</li>
-      </ul>
+          <div class="mt-4 text-sm flex flex-wrap gap-4 text-gray-700">
+            <span>📍 Guwahati / Delhi, India</span>
+            <a href="mailto:vishma24230@iiitd.ac.in" class="hover:underline text-blue-600">
+              ✉️ vishma24230@iiitd.ac.in
+            </a>
+            <a href="https://github.com/VishmaPratimDasHere" target="_blank" class="hover:underline text-blue-600">
+              GitHub
+            </a>
+          </div>
 
-      <!-- Projects -->
-      <h4 class="mt-3">Projects</h4>
-      <ul>
-        <li>Discord AI Chatbot — AI-driven replies (Self Guided)</li>
-        <li>News App (MVVM + Retrofit + Coroutines) — <a href="https://github.com/VishmaPratimDasHere/News_App">GitHub</a></li>
-        <li>Flight Data Aggregator — <a href="https://github.com/VishmaPratimDasHere/Flight_Data_Aggregator">GitHub</a></li>
-      </ul>
+          <div class="mt-6">
+            <a href="/assets/Resume_IIITD.pdf" target="_blank"
+              class="px-4 py-2 rounded-md bg-blue-600 text-white text-sm font-medium shadow hover:bg-blue-700 transition">
+              Download PDF
+            </a>
+          </div>
+        </header>
 
-      <a href="/assets//Resume_IIITD.pdf" class="btn btn-primary mt-3" download>Download Resume</a>
-    </div>
-  </div>
+        <!-- EDUCATIN -->
+        <section class="mt-12">
+          <h2 class="text-xl font-semibold">Education</h2>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+          <div class="mt-6 space-y-6">
+
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="font-medium">IIIT Delhi</p>
+                <p class="text-sm text-gray-600">M.Tech (Computational Biology)</p>
+              </div>
+              <p class="text-sm text-gray-500 text-right">2024 – Present<br>CGPA: 7.00</p>
+            </div>
+
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="font-medium">DUIET, Dibrugarh University</p>
+                <p class="text-sm text-gray-600">B.Tech (Computer Science & Engineering)</p>
+              </div>
+              <p class="text-sm text-gray-500 text-right">2019 – 2023<br>CGPA: 7.12</p>
+            </div>
+
+            <div class="flex justify-between items-start">
+              <p class="font-medium">SGVP International School, Ahmedabad (ISC)</p>
+              <p class="text-sm text-gray-500 text-right">2018 – 2019<br>64.6%</p>
+            </div>
+
+            <div class="flex justify-between items-start">
+              <p class="font-medium">Army Public School, Guwahati (CBSE)</p>
+              <p class="text-sm text-gray-500 text-right">2016 – 2017<br>CGPA: 9.0</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- INTERN / EXP -->
+        <section class="mt-12">
+          <h2 class="text-xl font-semibold">Experience / Internships</h2>
+
+          <div class="mt-6 space-y-6">
+
+            <!-- ML Intern -->
+            <div class="border rounded-lg bg-white p-5 shadow-sm">
+              <div class="flex justify-between items-start">
+                <div>
+                  <p class="text-lg font-medium">Machine Learning Intern (Industrial)</p>
+                  <p class="text-sm text-gray-600">Guide: Mahendra Datta</p>
+                </div>
+                <p class="text-sm text-gray-500 text-right">Aug 2022 – Sep 2022<br>Team Size: 3</p>
+              </div>
+
+              <p class="mt-3 text-sm text-gray-700">
+                Worked with Python, PyTorch & scikit-learn for data processing, training ML models
+                and extracting insights from datasets.
+              </p>
+            </div>
+
+            <!-- Web Trainee -->
+            <div class="border rounded-lg bg-white p-5 shadow-sm">
+              <div class="flex justify-between items-start">
+                <div>
+                  <p class="text-lg font-medium">Web Design Trainee (Industrial)</p>
+                  <p class="text-sm text-gray-600">Guide: Tankeshwar Nath</p>
+                </div>
+                <p class="text-sm text-gray-500 text-right">Nov 2020 – Dec 2020<br>Team Size: 4</p>
+              </div>
+
+              <p class="mt-3 text-sm text-gray-700">
+                Built responsive websites using HTML, CSS, JS & PHP, covering full web development lifecycle
+                including backend integration.
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="mt-12">
+          <h2 class="text-xl font-semibold">Projects</h2>
+
+          <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5">
+
+            <!-- Portfolio Website -->
+            <div class="border rounded-lg bg-white p-5 shadow-sm">
+              <p class="font-medium">Portfolio Website</p>
+              <p class="text-xs text-gray-500 mt-1">Oct 2025 – Present · Team Size: 1</p>
+              <p class="mt-2 text-sm text-gray-700">
+                MERN powered portfolio website deployed on Railway & Vercel.
+              </p>
+              <div class="mt-2 text-sm">
+                <a href="https://webapp-production-d145.up.railway.app/" target="_blank"
+                  class="text-blue-600 hover:underline">Live</a> •
+                <a href="https://github.com/VishmaPratimDasHere/Webapp" target="_blank"
+                  class="text-blue-600 hover:underline">Code</a>
+              </div>
+            </div>
+
+            <!-- Discord Bot -->
+            <div class="border rounded-lg bg-white p-5 shadow-sm">
+              <p class="font-medium">Discord AI Chatbot</p>
+              <p class="text-xs text-gray-500 mt-1">Apr 2025 – May 2025 · Team Size: 1</p>
+              <p class="mt-2 text-sm text-gray-700">
+                Discord bot that replies with AI and shares resume info based on context.
+              </p>
+              <div class="mt-2 text-sm">
+                <a href="https://discord.gg/VyuGGRMuXp" target="_blank" class="text-blue-600 hover:underline">Invite</a>
+              </div>
+            </div>
+
+            <!-- News app -->
+            <div class="border rounded-lg bg-white p-5 shadow-sm">
+              <p class="font-medium">News Application (Android)</p>
+              <p class="text-xs text-gray-500 mt-1">Apr 2025 – May 2025 · Team Size: 2</p>
+              <p class="mt-2 text-sm text-gray-700">
+                Kotlin + MVVM + Retrofit + Coroutines using NewsAPI.
+              </p>
+              <div class="mt-2 text-sm">
+                <a href="https://github.com/VishmaPratimDasHere/News_App" target="_blank"
+                  class="text-blue-600 hover:underline">Code</a>
+              </div>
+            </div>
+
+            <!-- Flight Data -->
+            <div class="border rounded-lg bg-white p-5 shadow-sm">
+              <p class="font-medium">Flight Data Aggregator (Android)</p>
+              <p class="text-xs text-gray-500 mt-1">Apr 2025 – May 2025 · Team Size: 1</p>
+              <p class="mt-2 text-sm text-gray-700">
+                Kotlin + Jetpack Compose + AviationStack API + Room DB.
+              </p>
+              <div class="mt-2 text-sm">
+                <a href="https://github.com/VishmaPratimDasHere/Flight_Data_Aggregator" target="_blank"
+                  class="text-blue-600 hover:underline">Code</a>
+              </div>
+            </div>
+
+            <!-- Travel App -->
+            <div class="border rounded-lg bg-white p-5 shadow-sm">
+              <p class="font-medium">Travel App</p>
+              <p class="text-xs text-gray-500 mt-1">Feb 2025 – Mar 2025 · Team Size: 1</p>
+              <p class="mt-2 text-sm text-gray-700">Android app for route planning and travel metrics.</p>
+              <div class="mt-2 text-sm">
+                <a href="https://github.com/VishmaPratimDasHere/Travel_App" target="_blank"
+                  class="text-blue-600 hover:underline">Code</a>
+              </div>
+            </div>
+
+            <!-- Object Tracking -->
+            <div class="border rounded-lg bg-white p-5 shadow-sm">
+              <p class="font-medium">Object Tracking (Python + OpenCV)</p>
+              <p class="text-xs text-gray-500 mt-1">Nov 2024 – Jan 2025 · Team Size: 5</p>
+              <p class="mt-2 text-sm text-gray-700">Template matching object tracker for live video.</p>
+              <div class="mt-2 text-sm">
+                <a href="https://github.com/VishmaPratimDasHere/ML_Object_Tracking/tree/main" target="_blank"
+                  class="text-blue-600 hover:underline">Code</a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <%- include("partials/footer") %>
+
 </body>
+
 </html>
