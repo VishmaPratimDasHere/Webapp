@@ -54,8 +54,8 @@ MIT License — free to use, copy, and modify.
 ## 📬 Contact
 
 ```
-Vishma Pratim Das
-vishmapdas@gmail.com | [<LinkedIn>](https://github.com/VishmaPratimDasHere/)
+NAME: Vishma Pratim Das
+EMAIL: vishmapdas@gmail.com | GITHUB: https://github.com/VishmaPratimDasHere
 ```
 
 ---
